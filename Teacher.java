@@ -18,7 +18,7 @@ public class Teacher extends User implements Printable{
 
     }
     public void printInfoToConsole(){
-        System.out.println("================================\n" +
+        System.out.println("--------------------------------\n" +
                 "Здравствуйте, Я учитель!\n"+"Меня зовут "+super.Secondrname +" "+super.name+" "+super.patronymic+"\nЯ преподаю "+this.subject);
     }
 
