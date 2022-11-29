@@ -14,7 +14,7 @@ public class DomoService {
         students.add(s);
         ArrayList<Teacher> teachers = new ArrayList<Teacher>();
         teachers.add(t);
-        University unever = new University( students,teachers,this.adress);
+        unever = new University( students,teachers,this.adress);
 
         unever.printInfoToConsole();
 
