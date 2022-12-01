@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 public class University implements Printable{
-    String adress;
-    ArrayList<Student> students = new ArrayList<Student>();
-    ArrayList<Teacher> teachers = new ArrayList<Teacher>();
+    private String adress;
+    private ArrayList<Student> students = new ArrayList<Student>();
+    private ArrayList<Teacher> teachers = new ArrayList<Teacher>();
     public University(ArrayList<Student> s,ArrayList<Teacher> t, String adress){
         this.students = s;
         this.teachers = t;
