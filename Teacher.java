@@ -1,25 +1,33 @@
 public class Teacher extends User implements Printable{
-    String subject;
+    private String subject;
 
     public void sayHello(){
 
         System.out.printf("Здравствуйте! Я преподаватель, мое имя", super.name);
     }
-    public Teacher(String name, int phone,String Secondrname,String patronymic,String subject){
-        super(name, phone,Secondrname,patronymic);
+    public Teacher(String name, int phone,String secondrname,String patronymic,String subject){
+        super.phone = phone;
+        super.name = name;
+        super.secondrname = secondrname;
+        super.patronymic = patronymic;
         this.subject = subject;
     }
-    public Teacher(String name,String Secondrname,String patronymic,String subject){
-        super(name,Secondrname,patronymic);
+    public Teacher(String name,String secondrname,String patronymic,String subject){
+        super.name = name;
+        super.secondrname = secondrname;
+        super.patronymic = patronymic;
         this.subject = subject;
     }
-    public Teacher(Teacher student){
-        super(student);
+    public Teacher(Teacher teacher){
+        super.name = teacher.name;
+        super.secondrname = teacher.secondrname;
+        super.patronymic = teacher.patronymic;
+        this.subject = teacher.subject;
 
     }
     public void printInfoToConsole(){
-        System.out.println("--------------------------------\n" +
-                "Здравствуйте, Я учитель!\n"+"Меня зовут "+super.Secondrname +" "+super.name+" "+super.patronymic+"\nЯ преподаю "+this.subject);
+        System.out.println("================================\n" +
+                "Здравствуйте, Я учитель!\n"+"Меня зовут "+super.secondrname +" "+super.name+" "+super.patronymic+"\nЯ преподаю "+this.subject);
     }
 
 }
