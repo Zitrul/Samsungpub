@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 public class DomoService {
-    University unever;
-    String adress = "House";
+    private University unever;
+    private String adress = "House";
     public void demo(){
         Student s = new Student("Alex",80800,"NN","Lexa","IT");
         Student s1 = new Student("ADAKSD",808340,"DSFPDSFKLSDJF","DSFSDF","Algebra");
