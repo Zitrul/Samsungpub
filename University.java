@@ -4,8 +4,13 @@ public class University implements Printable{
     private ArrayList<Student> students = new ArrayList<Student>();
     private ArrayList<Teacher> teachers = new ArrayList<Teacher>();
     public University(ArrayList<Student> s,ArrayList<Teacher> t, String adress){
-        this.students = s;
-        this.teachers = t;
+        for(Student student : s){
+            this.students.add(student);
+        }
+        for(Teacher teacher : teachers){
+            this.teachers.add(teachers);
+        }
+
         this.adress = adress;
     }
     public void printInfoToConsole(){
