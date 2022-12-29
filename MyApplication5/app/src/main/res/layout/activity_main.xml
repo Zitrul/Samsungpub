@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/finde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="118dp"
+        android:text="Поиск продукта"
+        android:onClick="onClick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="102dp"
+        android:layout_marginEnd="107dp"
+        android:text="Добавить продукт"
+        android:onClick="addproduct"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cost" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="110dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="300dp"
+        android:text="Количество"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="210dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="200dp"
+        android:text="Стоимость за единицу"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/data" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="188dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="5dp"
+        android:text="Дата поступления"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="180dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="4dp"
+        android:text="Название продукта"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/number"
+        tools:layout_editor_absoluteX="2dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="61dp">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/cost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
